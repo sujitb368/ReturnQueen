@@ -1,0 +1,75 @@
+.font-gilroy-bold {
+  font-family: "gilroy-bold";
+}
+.grid-display {
+  display: grid;
+  gap: 1.25rem;
+}
+.hero_text {
+  font-size: 5.625rem;
+  margin-left: -6px;
+  line-height: 0.9;
+  letter-spacing: -2px;
+  color: #8755de;
+  font-family: "gilroy-bold";
+}
+.text-primary {
+  color: #8755de;
+}
+.return-footer-p {
+  font-size: 1.875rem;
+  margin-top: 40px;
+}
+.right {
+  padding-top: 3rem;
+}
+.right a:first-child {
+  margin-right: 0.625rem;
+}
+.right a {
+  width: calc(50% - 8px);
+  max-width: 200px;
+}
+// .apps {
+//   display: inline-block;
+//   width: 130px;
+//   cursor: pointer;
+//   // text-decoration: none;
+// }
+.inline-block {
+  display: inline-block;
+  width: 130px;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+}
+
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+@media screen and(min-width:768px) {
+  .hero_text {
+    font-size: 4.6875rem;
+  }
+}
+@media screen and(min-width:1024px) {
+  .hero_text {
+    font-size: 8.75rem;
+  }
+}
+@media screen and(min-width:1280px) {
+  .grid-display {
+    grid-template-columns: 3fr 1fr;
+  }
+  .right a:first-child {
+    margin: 0 0 1.25rem 0;
+  }
+  .right a {
+    width: 100%;
+    max-width: 100%;
+  }
+}

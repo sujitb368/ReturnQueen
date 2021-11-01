@@ -1,0 +1,40 @@
+<div class="slider">
+  <div class="individual-pricing" *ngFor="let info of planInfo">
+    <div class="pricing-header">
+      <div class="ph-top">
+        <p class="title">
+          {{ info.title }}
+          <img
+            alt="free"
+            class="lazy-loaded"
+            width="60"
+            height="24"
+            [src]="info.img"
+          />
+        </p>
+      </div>
+
+      <div class="price-amt-holder">
+        <p class="price-amt">{{ info.price }} <span>/mo</span></p>
+        <span>{{ info.priceBelow }}</span>
+      </div>
+
+      <div class="type-of-service text-center">
+        <span>{{ info.offer }} &trade;</span>
+      </div>
+    </div>
+
+    <div class="pricing-points-holder">
+      <div class="point-header">
+        <p>{{ info.heading }}</p>
+      </div>
+      <div
+        class="pricing-points"
+        *ngFor="let p of info.details; let point = index"
+      >
+      <!-- "{'first': true, 'second': true, 'third': false}" -->
+        <p  [ngClass]="{'hello': true, 'hello21': true }" > {{ info.details[point] }}</p>
+      </div>
+    </div>
+  </div>
+</div>

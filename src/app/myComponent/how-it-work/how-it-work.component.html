@@ -1,0 +1,22 @@
+
+  <div *ngFor="let i of hiw_stpes; let step = index" class="hiw-step">
+    <div class="hiw-image">
+      <img
+        width="100"
+        height="100"
+        alt="Sign in with Gmail"
+        class="lazy-loaded"
+        [src]="i.img"
+      />
+
+      <p class="step_no">{{step+1}}</p>
+
+    </div>
+    <p>{{ i.p }}</p>
+    <ul *ngFor="let p of i.desc; let j = index">
+      <li>
+        <p>{{ i.desc[j] }}</p>
+      </li>
+    </ul>
+  </div>
+
