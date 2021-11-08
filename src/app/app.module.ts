@@ -12,7 +12,12 @@ import { HowItWorkComponent } from './myComponent/how-it-work/how-it-work.compon
 import { PlanComponent } from './myComponent/plan/plan.component';
 import { ReturnFooterComponent } from './myComponent/return-footer/return-footer.component';
 import { FooterComponent } from './myComponent/footer/footer.component';
-
+import { PressComponent } from './Pages/press/press.component';
+import { PressReleasesComponent } from './myComponent/press-releases/press-releases.component';
+import { AboutUsComponent } from './Pages/about-us/about-us.component';
+import { SwiperModule } from 'swiper/angular';
+import { FaqComponent } from './Pages/faq/faq.component';
+import { ContactComponent } from './Pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +30,11 @@ import { FooterComponent } from './myComponent/footer/footer.component';
     PlanComponent,
     ReturnFooterComponent,
     FooterComponent,
+    PressComponent,
+    PressReleasesComponent,
+    AboutUsComponent,
+    FaqComponent,
+    ContactComponent,
 
 
   ],
@@ -32,7 +42,8 @@ import { FooterComponent } from './myComponent/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

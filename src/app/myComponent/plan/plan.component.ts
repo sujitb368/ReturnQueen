@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import SwiperCore, {Navigation, Pagination , SwiperOptions ,Virtual } from 'swiper';
+import { SwiperComponent } from 'swiper/angular';
+
+
+SwiperCore.use([Navigation, Pagination, Virtual ]);
+
 
 @Component({
   selector: 'app-plan',
@@ -6,6 +12,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./plan.component.scss']
 })
 export class PlanComponent implements OnInit {
+  onSwiper(){
+    console.log("onSwiper");
+
+  }
+  // swiper:any;
+  onSlideChange(){
+    console.log("onSlideChange");
+
+  }
+
+  config: SwiperOptions = {
+    slidesPerView: "auto",
+    // spaceBetween: 50,
+    navigation: true,
+    pagination: { clickable: true },
+    scrollbar: { draggable: true },
+  };
+  @ViewChild('swiper', { static: false }) swiper:any;
+  slideNext(){
+    this.swiper.swiperRef.slideNext(500);
+  }
+  slidePrev(){
+    this.swiper.swiperRef.slidePrev(500);
+  }
+
 
   planInfo = [
     {title:"free", img:"./assets/asset_img/plans/free.png", price:"$0.00", priceBelow:"", offer:"no return service",heading:"organized shopping begins here.", details:["Organize and track your orders by return date", "Next day scheduling", "Pickups available Monday - Friday", "Weekend Pickups available", "Extended pick-up hours", "Ultra-flex scheduiling"]},
@@ -16,6 +47,8 @@ export class PlanComponent implements OnInit {
 
     {title:"royal", img:"./assets/asset_img/plans/royal.png", price:"$34.99",priceBelow:"after 1 free pickup", offer:"4 pickup per month",heading:"the royal treatment. this is as good as it gets.", details:[ { name:"Organize and track your orders by return date", check:true} ,"Next day scheduling", "Pickups available Monday - Friday", "Weekend Pickups available","Extended pick-up hours","Ultra-flex scheduiling"]}
   ]
+
+
 
   constructor() { }
 

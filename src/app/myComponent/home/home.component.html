@@ -1,1 +1,226 @@
-<p>home works!</p>
+<section data-heroHome class="home-hero">
+  <div class="container">
+    <div class="inner hero_inner">
+      <div class="hero_left">
+        <h1 class="hero_text">returns made easy.</h1>
+
+        <a href="" class="apps">
+          <img
+            class="apps_store_img"
+            src="assets/asset_img/google-play-badge-ai.png"
+            alt=""
+          />
+        </a>
+        <a href="" class="apps">
+          <img
+            class="apps_store_img apple_apps_store"
+            src="assets/asset_img/app-store-badge.png "
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="hero_right">
+        <div class="video-player">
+          <iframe
+            src="https://player.vimeo.com/video/616080308?h=aefadab025&amp;loop=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;loop=1"
+            width="640"
+            height="360"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen=""
+            data-ready="true"
+          ></iframe>
+
+          <button class="play-btn pointer" aria-label="play video">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              height="30"
+              width="30"
+            >
+              <path
+                d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mobile-video" heroMobile>
+  <div class="container">
+    <div class="inner mobile_inner">
+      <div class="left">
+        <svg width="545" height="808" viewBox="0 0 545 808" fill="none">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M24.9137 29.4786L520.084 0.394203C533.845 0.394203 545 13.4156 545 29.4786V749.831C545 765.894 533.845 778.915 520.084 778.915L24.9137 808C11.1544 808 0 794.979 0 778.915V58.5631C0 42.5 11.1544 29.4786 24.9137 29.4786Z"
+            fill="#8755DE"
+          ></path>
+        </svg>
+
+        <div class="phone-video">
+          <iframe
+            src="https://player.vimeo.com/video/616083339?h=debdafe826&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;muted=1"
+            width="640"
+            height="1138"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </div>
+      <div class="right">
+        <div>
+          <p class="title">let us...</p>
+          <ul>
+            <li>
+              <span class="mobile_video_span"
+                >organize your online pruchases</span
+              >
+            </li>
+            <li>
+              <span class="mobile_video_span">pack and ship your returns</span>
+            </li>
+            <li>
+              <span class="mobile_video_span">get your return faster!</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="title">save time</p>
+          <ul>
+            <li>
+              <span class="mobile_video_span">no tape</span>
+            </li>
+            <li>
+              <span class="mobile_video_span">no boxes</span>
+            </li>
+            <li>
+              <span class="mobile_video_span">no printer</span>
+            </li>
+            <li>
+              <span class="mobile_video_span">no trips to the post office</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="title">save money</p>
+          <ul>
+            <li>
+              <span class="mobile_video_span"
+                >you'll get the refund you deserve!</span
+              >
+            </li>
+            <li>
+              <span class="mobile_video_span"
+                >never miss a return deadline again.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="shoping_return">
+  <div class="container">
+    <div class="inner shoping_return_inner">
+      <h2 class="return_title">
+        you do the shopping.<br />we do the returning.
+      </h2>
+      <div class="mobile">
+        <app-retun-mobile-view class="mobile_view"></app-retun-mobile-view>
+      </div>
+      <div class="desk">
+        <app-return-desk-view ></app-return-desk-view>
+      </div>
+
+      <p class="return_title_bottom">
+        we process returns from over 300 retailers!
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="buy_from">
+  <div class="container text-center">
+    <div class="inner">
+      <h2 class="buy_from_title section_title text-primary  buy_from_inner">
+        buy what you want. <br />from wherever you want.
+      </h2>
+
+      <app-buy-from-companies></app-buy-from-companies>
+    </div>
+  </div>
+</section>
+
+<section id="map" mapPurpleTrucks>
+  <div class="container text-center">
+    <div class="inner">
+      <h2 class="section_title text-primary">our purple trucks <br> have taken over.</h2>
+      <map name=""> map</map>
+
+
+       <p class="zip-para">
+         are we servicing your city? find out here.
+
+       </p>
+
+
+      <form [formGroup]="searchForm" novalidate class="form">
+        <input
+          [formControl]="zip"
+          class="wr"
+          type="number"
+          placeholder="enter your zip code"
+        />
+        <button class="in btn_search">search</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="how-it-work">
+  <div class="container text-center">
+    <div class="inner hiw-inner">
+      <h2 class="section_title text-primary">how does it work</h2>
+
+
+        <app-how-it-work class="how-it-work-grid"></app-how-it-work>
+
+
+
+      <p class="no-tape text-primary">
+        no more tape. no more boxes. no more stress.
+      </p>
+
+      <span class="more-qa block text-primary"
+        >have more questions? check out the <a href="/faq.html">faqs.</a></span
+      >
+    </div>
+  </div>
+</section>
+
+<section class="plan">
+  <div class="container ">
+    <div class="inner">
+      <h2 class="section_title text-primary text-center">choose your plan.</h2>
+
+      <div class="plan-container">
+        <app-plan></app-plan>
+      </div>
+
+
+    </div>
+  </div>
+
+</section>

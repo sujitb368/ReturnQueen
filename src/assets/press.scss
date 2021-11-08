@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: lowercase;
+  font-size: 16px;
+  font-family: "gilroy-medium";
+}
+a{
+  text-decoration: none;
+}
+.text-center {
+  text-align: center;
+}
+.text-primary {
+  color: #8755de;
+}
+// .hero_text {
+//   font-size: 5.625rem;
+//   margin-bottom: 3.75rem;
+//   line-height: 0.9;
+//   letter-spacing: -2px;
+//   color: #8755de;
+//   font-family: "gilroy-bold";
+// }
+
+
+// .container {
+//   max-width: 1200px;
+//   padding-left: 1.25rem;
+//   padding-right: 1.25rem;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+// .inner {
+//   position: relative;
+//   padding-top: 50px;
+//   padding-bottom: 50px;
+// }
+.press-hero .inner {
+  display: grid;
+  gap: 40px;
+  align-items: center;
+}
+// .hero_text {
+//   font-size: 5.625rem;
+// }
+.press-hero p {
+  margin: 2.1875rem 0 1.125rem 0;
+  font-size: 1.25rem;
+}
+
+.press-hero .common-btn {
+  width: 100%;
+  max-width: 380px;
+  font-family: gilroy-bold;
+  font-size: 20px;
+}
+.press-hero .right img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+// .container .inner::after {
+//   content: "";
+//   position: absolute;
+//   width: 98%;
+//   left: 50%;
+//   bottom: 0;
+//   height: 3px;
+//   background: #000;
+//   transform: translateX(-50%);
+// }
+
+// press releases
+
+.press-grid {
+    margin-top: 50px;
+    display: grid;
+    gap: 10px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+// testmonial
+.people-talking .testimonials-slider {
+  margin-top: 50px;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.relative {
+  position: relative;
+}
+.at-grid {
+  display: grid;
+  align-items: center;
+  gap: 40px;
+}
+
+.people-talking .at-image-wrapper {
+  margin: auto;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.people-talking .at-image img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.people-talking .at-image-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 89%;
+  height: 89%;
+  border: 14px solid #000;
+  border-radius: 50%;
+}
+.at-content p {
+  font-size: 1.125rem;
+}
+.at-content span {
+  margin: 1.25rem 0;
+  font-size: 1.25rem;
+}
+.people-talking .at-content p,  .at-content small {
+  color: #8755de;
+}
+.block {
+  display: block;
+}
+span {
+  line-height: 1.5;
+}
+
+//colobration
+.collab-grid {
+  margin: 50px 0;
+  display: grid;
+  gap: 30px;
+}
+.collab-inner {
+  overflow: hidden;
+  width: 100%;
+}
+.vid-image {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+.vid-image img {
+  object-fit: cover;
+}
+.vid-image>* {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.wanna-collab span {
+  color: #8755de;
+  font-family: gilroy-bold;
+  font-size: 24px;
+  margin-top: 10px;
+  display: block;
+}
+
+
+
+
+@media (min-width: 768px){
+.press-hero .inner {
+    grid-template-columns: 1fr 1.8fr;
+}
+.common-btn {
+  font-size: 1.125rem;
+}
+.section-title {
+  font-size: 40px;
+}
+.press-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.at-grid {
+  grid-template-columns: auto 1fr;
+  text-align: left;
+}
+.collab-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+}
+@media (min-width: 1024px){
+//   .hero_text {
+//     font-size: 8.75rem;
+// }
+.press-hero p {
+  font-size: 1.5rem;
+}
+.section-title {
+  font-size: 50px;
+}
+.press-releases span {
+  font-size: 2.5rem;
+}
+.press-releases span {
+  font-size: 3.125rem;
+}
+}
+@media (min-width: 1280px){
+.container .inner {
+    padding: 3.75rem  0;
+}
+.section-title {
+  font-size: 80px;
+}
+}

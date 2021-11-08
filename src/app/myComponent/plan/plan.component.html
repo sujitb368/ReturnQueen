@@ -1,5 +1,7 @@
-<div class="slider">
-  <div class="individual-pricing" *ngFor="let info of planInfo">
+
+<swiper #swiper  [config]="config" class="slider" (swiper)="onSwiper()" (slideChange)="onSlideChange()" [pagination]="{ clickable: true }"
+[scrollbar]="{ draggable: true }">
+  <ng-template swiperSlide class="individual-pricing"  *ngFor="let info of planInfo">
     <div class="pricing-header">
       <div class="ph-top">
         <p class="title">
@@ -32,9 +34,14 @@
         class="pricing-points"
         *ngFor="let p of info.details; let point = index"
       >
-      <!-- "{'first': true, 'second': true, 'third': false}" -->
+        <!-- condition for addin class using ng-class -->
         <p  [ngClass]="{'hello': true, 'hello21': true }" > {{ info.details[point] }}</p>
+
+
       </div>
     </div>
-  </div>
-</div>
+  </ng-template>
+</swiper>
+
+<button (click)="slideNext()"></button>
+<button (click)="slidePrev()"></button>

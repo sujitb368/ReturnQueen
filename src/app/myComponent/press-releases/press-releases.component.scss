@@ -1,0 +1,45 @@
+// .g {
+//   margin-top: 50px;
+//   display: grid;
+//   gap: 10px;
+//   max-width: 1000px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+.g>* {
+  position: relative;
+  padding-top: 100%;
+  z-index: 1;
+}
+ img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: contain;
+  z-index: -1;
+}
+.g>*::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(135,85,222,.18);
+}
+ span {
+  padding: 15px;
+  width: 100%;
+  position: absolute;
+  line-height: .95;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #fff;
+  font-size: 1.875rem;
+  font-family: "gilroy-bold";
+}
+

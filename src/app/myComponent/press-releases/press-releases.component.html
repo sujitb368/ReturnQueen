@@ -1,0 +1,15 @@
+
+<!-- class="press-grid" -->
+  <div class="g" *ngFor="let item of img_name">
+    <div>
+
+      <a
+      href="/pressdetails.html?id=02e74f10e0327ad868d138f2b4fdd6f0"  target="_blank"
+      >
+      <img class="lazy-loaded" alt="miami press" [src]= "press_img_src+item"/>
+      <span>{{ item | slice:0:-4 }} </span>
+    </a>
+
+  </div>
+
+</div>

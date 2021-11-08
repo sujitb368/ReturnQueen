@@ -1,0 +1,209 @@
+
+.aboutus-hero .common-btn {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  max-width: 380px;
+  font-family: gilroy-bold;
+  font-size: 20px;
+}
+
+.our-mission .common-btn {
+  min-width: auto;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: gilroy-bold;
+}
+
+.aboutus-hero p {
+  margin: 20px 0 30px 0;
+  font-size: 1.5rem;
+}
+.aboutus-hero h1 span {
+  display: block;
+  line-height: inherit;
+  font-size: inherit;
+}
+.hello-section .inner > p {
+  font-size: 18px;
+  margin-top: 30px;
+}
+.hello-title {
+  font-size: 2.5rem;
+  font-family: gilroy-bold;
+}
+.hello-section-grid {
+  margin: 50px auto;
+  max-width: 700px;
+}
+.hello-section .sec-content p> * + * {
+  margin-top: 20px;
+}
+.hello-section .sec-content p{
+  margin-top: 20px;
+  font-size: 1rem;
+}
+.signature svg {
+  position: absolute;
+  transform: rotate(-12deg);
+  top: -10p;
+  left: -15px;
+}
+.signature {
+  margin-top: 25px;
+  position: relative;
+  display: inline-block;
+}
+.signature img {
+  display: inline-block;
+}
+.hello-section .inner > h3 {
+  font-size: 1.5625rem;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1;
+  font-family: gilroy-semibold;
+}
+.our-mission .left {
+  z-index: 1;
+  padding: 50px 20px;
+  position: relative;
+}
+.our-mission {
+  background: #000;
+  position: relative;
+  color: #fff;
+  // margin-bottom: 50px;
+}
+.our-mission p {
+  font-size: 3.75rem;
+  font-family: gilroy-bold;
+}
+.our-mission span {
+  font-size: 1.125rem;
+  margin: 30px 0;
+}
+.our-mission .left::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #8755de;
+  z-index: -1;
+}
+.the-team {
+  margin-top: 3.125rem;
+}
+.the-team .inner > p {
+  margin-top: 30px;
+  font-size: 1.125rem;
+}
+.team-grid {
+  margin-top: 3.75rem;
+  display: grid;
+  gap: 20px;
+}
+.the-team .member {
+  text-transform: lowercase;
+  background: rgba(135, 85, 222, 0.2);
+  padding: 30px;
+  color: #8755de;
+}
+.member-name {
+  font-size: 1.125rem;
+}
+.member-points {
+  text-align: left;
+  margin-top: 1.5rem;
+  counter-reset: points;
+}
+.member-points p {
+  padding-left: 1.5rem;
+  position: relative;
+}
+.member-points > * + * {
+  margin-top: 0.625rem;
+}
+
+
+@media screen and(min-width:768px) {
+  .aboutus-hero h1 span {
+    display: inline;
+  }
+
+  .hello-section .inner > p {
+    font-size: 20px;
+  }
+  .hello-title {
+    font-size: 4.375rem;
+  }
+  .hello-section .inner > h3 {
+    font-family: gilroy-bold;
+  }
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .the-team .inner > p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and(min-width:1024px) {
+  .hello-section .sec-content p{
+    font-size: 1.25rem;
+  }
+  .hello-section .inner > h3 {
+    max-width: 1000px;
+    font-size: 3.75rem;
+  }
+  .our-mission .left {
+    position: static;
+    padding: 0;
+  }
+  .our-mission .left::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #8755de;
+    z-index: -1;
+  }
+  .our-mission .left::after {
+    width: 50%;
+  }
+  .team-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and(min-width:1100px) {
+  .hello-section .sec-content p{
+    font-size: 1.75rem;
+  }
+}
+@media screen and(min-width:1280px) {
+  .hello-section .inner > p {
+    font-size: 24px;
+  }
+  .hello-title {
+    font-size: 14.375rem;
+  }
+  .our-mission .inner {
+    padding-top: 50px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .our-mission span {
+    font-size: 1.875rem;
+  }
+  .team-grid {
+    gap: 40px;
+  }
+  .the-team .inner > p {
+    font-size: 1.875rem;
+  }
+}

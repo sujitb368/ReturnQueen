@@ -1,0 +1,95 @@
+.faq-hero .inner {
+  display: grid;
+  align-items: center;
+}
+.faq-hero p {
+  margin: 2.1875rem 0 1.125rem 0;
+  font-size: 1.25rem;
+}
+.faq-holder input{
+  padding: 0 20px 0 45px;
+}
+.faq-holder form svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  top: 52%;
+}
+.faq-cards-wrapper * {
+  text-transform: initial;
+}
+.all-faqs-parent {
+  padding-top: 50px;
+  min-height: 200px;
+}
+.all-faqs-parent>*+* {
+  padding-top: 50px;
+}
+.faq-cards-wrapper {
+  margin-top: 60px;
+}
+
+.faq-card {
+  border: 1px solid #412a74;
+  border-radius: 15px;
+}
+.faq-title {
+  padding: 1.5rem 3.125rem 1.5rem 1.25rem;
+  color: #8755de;
+  font-size: 1.4375rem;
+  font-family: gilroy-bold;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+}
+.faq-title::after {
+  content: "+";
+  position: absolute;
+  right: 18px;
+  top: 24px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #8755de;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1px;
+}
+
+.collapse {
+  // height: 0;
+  overflow: hidden;
+}
+.faq-content {
+  padding: 0 1.125rem 1.125rem 1.125rem;
+  line-height: 1.5;
+  font-size: 1.125rem;
+}
+.faq-content p{
+  line-height: 1.5;
+  font-size: 1.125rem;
+}
+@media screen and(max-width:450px) {
+  .faq-hero .hero_text {
+    font-size: 4.6875rem;
+    margin-bottom: 0;
+}
+}
+@media screen and(min-width:768px) {
+  .faq-hero .inner {
+    grid-template-columns: 1fr 1.8fr;
+  }
+  .faq-content p{
+    font-size: 1.4375rem;
+}
+}
+@media screen and(min-width:1024px) {
+  .faq-hero p {
+    font-size: 1.5rem;
+  }
+}
+
