@@ -3,7 +3,12 @@
 .mobile-video {
   margin-top: 50px;
 }
-
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
 .mobile_inner::after {
   content: "";
   position: absolute;
@@ -228,17 +233,101 @@
   top: 50%;
   transform: translateY(-50%);
 }
-#map .inner::after {
-  content: "";
-  position: absolute;
-  width: 98%;
-  left: 50%;
-  bottom: 0;
-  height: 3px;
-  background: #000;
-  transform: translateX(-50%);
+// #map .inner::after {
+//   content: "";
+//   position: absolute;
+//   width: 98%;
+//   left: 50%;
+//   bottom: 0;
+//   height: 3px;
+//   background: #000;
+//   transform: translateX(-50%);
+// }
+.chartdiv{
+  text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
+#map{
+  width: 70%;
+  height: 450px;
+}
+.availability-popup {
+  z-index: 9999;
+  background: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 650px;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: none;
+
+}
+
+.availability-popup .popup-inner {
+  position: relative;
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  border-radius: inherit;
+  padding: 30px 25px;
+}
+.availability-popup .popup-title {
+  font-size: 1.5rem;
+  margin: 10px 0 24px 0;
+  color: #8755de;
+  font-family: gilroy-semibold;
+}
+.availability-popup .popup-content {
+  font-size: 0.875rem;
+}
+.service-available .great-news {
+  margin-top: 15px;
+  font-family: gilroy-semibold;
+}
+.availability-popup .download-app-popup {
+  margin: 20px 0 8px 0;
+  display: inline-block;
+  cursor: pointer;
+  color: #8755de;
+  font-family: gilroy-semibold;
+}
+.service-available .popup-image img {
+  width: 50%;
+}
+.availability-popup .app-btns a {
+  display: inline-block;
+}
+.availability-popup .app-btns a:last-child {
+  margin-left: 10px;
+}
+.availability-popup .close-popup {
+  padding: 0;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+button {
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  user-select: none;
+}
+.service-available .popup-image img {
+  width: 70%;
+}
+
+@media screen and(min-width:650px){
+  .availability-popup .popup-inner {
+    grid-template-columns: 1fr 1fr;
+}
+}
 //how does it work
 .how-it-work-grid {
   max-width: 1050px;
@@ -432,4 +521,22 @@
   width: 10px;
   height: 10px;
   padding: 2px;
+}
+.pricing-points p.crossed::before {
+  background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2215%22%20height%3D%2215%22%20viewBox%3D%220%200%2015%2015%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M13.3935%201.56787L1.39352%2013.5679%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3Cpath%20d%3D%22M1.39352%201.56787L13.3935%2013.5679%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E%0A);
+  background-color: #412a74;
+  background-repeat: no-repeat;
+  background-size: 60% 60%;
+  background-position: center;
+}
+.pricing-header .popular {
+  background: #fff;
+  color: #8755de;
+  padding: 12px 6px 20px 6px;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 8px;
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 100%, 50% 75%, 50% 75%, 0 100%, 0% 30%);
 }

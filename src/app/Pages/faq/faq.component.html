@@ -21,6 +21,7 @@
             type="text"
             placeholder="type keywords to find answers"
             name="faq"
+            id="input"
           />
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
             <path
@@ -41,74 +42,25 @@
           <h2 class="section_title text-primary text-center">
             App Data &amp; Security
           </h2>
-          <div class="faq-cards-wrapper">
+
+          <div class="faq-cards-wrapper" *ngFor="let item of ques;  let i = index">
             <div class="faq-card">
               <button class="faq-title" aria-expanded="false">
-                Is the mobile app secure?
+                {{item.question}}
               </button>
               <div class="collapse">
                 <div class="faq-content">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, assumenda illo. Cupiditate nostrum facilis magnam velit dicta vero eum quis!</p>
+                  <p innerHTML={{item.answer}}>{{item.answer}}</p>
+
                 </div>
               </div>
             </div>
           </div>
-          <div class="faq-cards-wrapper">
-            <div class="faq-card">
-              <button class="faq-title" aria-expanded="false">
-                Is the mobile app secure?
-              </button>
-              <div class="collapse">
-                <div class="faq-content">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, assumenda illo. Cupiditate nostrum facilis magnam velit dicta vero eum quis!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="faq-cards-wrapper">
-            <div class="faq-card">
-              <button class="faq-title" aria-expanded="false">
-                Is the mobile app secure?
-              </button>
-              <div class="collapse">
-                <div class="faq-content">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, assumenda illo. Cupiditate nostrum facilis magnam velit dicta vero eum quis!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="faq-cards-wrapper">
-            <div class="faq-card">
-              <button class="faq-title" aria-expanded="false">
-                Is the mobile app secure?
-              </button>
-              <div class="collapse">
-                <div class="faq-content">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, assumenda illo. Cupiditate nostrum facilis magnam velit dicta vero eum quis!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="faq-category" id="9bf31c7ff062936a96d3c8bd1f8f2ff3">
-          <h2 class="section_title text-primary text-center">
-            App Data &amp; Security
-          </h2>
-          <div class="faq-cards-wrapper">
-            <div class="faq-card">
-              <button class="faq-title" aria-expanded="false">
-                Is the mobile app secure?
-              </button>
-              <div class="collapse">
-                <div class="faq-content">
-                  <p>paragraph</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+
 
       </div>
     </div>
+  </div>
   </div>
 </section>

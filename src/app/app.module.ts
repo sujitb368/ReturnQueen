@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,9 @@ import { AboutUsComponent } from './Pages/about-us/about-us.component';
 import { SwiperModule } from 'swiper/angular';
 import { FaqComponent } from './Pages/faq/faq.component';
 import { ContactComponent } from './Pages/contact/contact.component';
+import { TermsComponent } from './Pages/terms/terms.component';
+import { PrivacyComponent } from './Pages/privacy/privacy.component';
+import { WorkWithUsComponent } from './Pages/work-with-us/work-with-us.component';
 
 @NgModule({
   declarations: [
@@ -35,11 +39,15 @@ import { ContactComponent } from './Pages/contact/contact.component';
     AboutUsComponent,
     FaqComponent,
     ContactComponent,
+    TermsComponent,
+    PrivacyComponent,
+    WorkWithUsComponent,
 
 
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,

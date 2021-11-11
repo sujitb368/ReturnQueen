@@ -163,11 +163,15 @@
   </div>
 </section>
 
-<section id="map" mapPurpleTrucks>
+<section class="map" mapPurpleTrucks>
   <div class="container text-center">
     <div class="inner">
       <h2 class="section_title text-primary">our purple trucks <br> have taken over.</h2>
-      <map name=""> map</map>
+
+      <div class="chartdiv">
+        <div id="map"  ></div>
+
+      </div>
 
 
        <p class="zip-para">
@@ -177,14 +181,55 @@
 
 
       <form [formGroup]="searchForm" novalidate class="form">
-        <input
+        <input id="mapInp"
           [formControl]="zip"
           class="wr"
           type="number"
           placeholder="enter your zip code"
         />
-        <button class="in btn_search">search</button>
+        <button id="mapInpBtn" class="in btn_search">search</button>
       </form>
+
+      <div class="availability-popup service-available opened hide" style="margin-top: 0px; opacity: 1; visibility: inherit; ">
+        <div class="popup-inner">
+            <div class="popup-image text-center">
+                <img src="assets/asset_img/popup02.png" class="img-fluid">
+            </div>
+            <div class="content">
+                <p class="popup-title">the good news: <br>you’re in luck!</p>
+                <div class="popup-content">
+                    <span class="block">There are some cool purple trucks in your area ready to pick up your
+                        returns.</span>
+                    <span class="block">Download the ReturnQueen app and put the convenience (and fun) back into online
+                        shopping.</span>
+                </div>
+
+                <div class="great-news">
+                    <span class="block">the great news:</span>
+                    <span class="block">get your first pickup free</span>
+                </div>
+
+                <a class="dwnld-app-link download-app-popup">download the app</a>
+
+                <div class="app-btns">
+                    <a href="https://apps.apple.com/us/app/returnqueen/id1537845231" target="_blank" rel="noopener noreferrer" aria-label="ReturnQueen app store">
+                        <img src="assets/asset_img/app-store-badge.png" width="100" alt="Apple App store">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.returnqueen" target="_blank" rel="noopener noreferrer" aria-label="ReturnQueen play store">
+                        <img src="assets/asset_img/play-store-badge.png" width="100" alt="Google Play store">
+                    </a>
+                </div>
+            </div>
+
+            <button class="close-popup" onclick="closePopup()">
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+
+        </div>
+    </div>
     </div>
   </div>
 </section>

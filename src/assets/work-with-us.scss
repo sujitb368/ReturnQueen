@@ -1,0 +1,106 @@
+.career-hero p {
+  margin: 20px 0 30px 0;
+  font-size: 1.5rem;
+}
+.career-hero .common-btn {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.career-hero .inner {
+  display: grid;
+  gap: 40px;
+}
+.three-col-grid {
+  display: grid;
+  gap: 50px;
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+}
+.perks .team-image {
+  width: 100%;
+  margin-top: 5rem;
+}
+.three-col-grid svg {
+  width: 100px;
+  height: 100px;
+}
+.three-col-grid p {
+  font-size: 1.75rem;
+  line-height: 1;
+  line-height: .9;
+  font-family: gilroy-bold;
+  color: #8755de;
+  margin: 0 0 15px 0;
+}
+.three-col-grid span {
+  text-transform: lowercase;
+  display: block;
+}
+.job-people .three-col-grid {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.job-people .three-col-grid>div:first-child svg {
+  width: 70px;
+  height: 70px;
+  margin-top: 20px;
+}
+.job-people .three-col-grid>div:nth-child(2) svg {
+  width: 70px;
+  height: 70px;
+  margin-top: 20px;
+}
+.job-people .three-col-grid>div:nth-child(3) svg {
+  width: 90px;
+  height: 90px;
+}
+.drive-with-us p {
+  font-size: 1.25rem;
+  margin-top: 1.875rem;
+}
+.drive-with-us-grid {
+  margin: 5rem 0;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.drive-with-us-grid img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  border: 10px solid #000;
+}
+@media screen and(min-width:768px){
+  .career-hero .inner {
+    grid-template-columns: 1fr 1.8fr;
+  }
+  .career-hero .right {
+    padding-top: 50px;
+}
+.three-col-grid p {
+  font-size: 2.1875rem;
+}
+}
+@media screen and(min-width:1024px){
+  .three-col-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+  }
+  .drive-with-us-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+}
+}
+@media screen and(min-width:1280px){
+  .three-col-grid p {
+    font-size: 2.5rem;
+}
+.three-col-grid span {
+  padding: 0 25px;
+}
+.drive-with-us-grid {
+  gap: 60px;
+}
+}

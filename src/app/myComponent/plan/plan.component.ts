@@ -25,7 +25,7 @@ export class PlanComponent implements OnInit {
   config: SwiperOptions = {
     slidesPerView: "auto",
     // spaceBetween: 50,
-    navigation: true,
+    // navigation: true,
     pagination: { clickable: true },
     scrollbar: { draggable: true },
   };

@@ -55,6 +55,9 @@ img {
   .hero_text {
     font-size: 4.6875rem;
   }
+  .return-footer-p br {
+    display: none;
+}
 }
 @media screen and(min-width:1024px) {
   .hero_text {

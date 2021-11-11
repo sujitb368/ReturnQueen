@@ -49,4 +49,7 @@
   .footer-inner .last-row ul {
     width: 31.3%;
   }
+  .footer-inner .first-row {
+    grid-template-columns: 1fr 1fr 3fr 1.3fr 1fr;
+}
 }
